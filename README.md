@@ -1,14 +1,3 @@
-Add Readme.md
-# Please enter the commit message for your changes. Lines starting
-# with '#' will be ignored, and empty message aborts the commit.
-# 
-# On branch master
-#
-# Initial commit
-#
-# Changes to be commited:
-#	new file: Readme.md
-#
-# Untracked files:
-#	lab-01/
-#
+# COM-121 Private Course Directory
+
+Here you can find all the works of Meerim Kanybekova for the COM-121 course.
