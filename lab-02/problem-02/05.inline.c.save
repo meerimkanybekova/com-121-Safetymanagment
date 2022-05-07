@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdbool.h>
+
+int main() {
+	char c;
+	int is_whitespace;
+	getchar();
+	asm(
+		"mov %%eax, %0;"
+		"cmp %0, $32;"
+		"jne L0;"
+		"mov $1, %1;"
+		"L0:"
+		"cmp %0, $9;"
+		"jne L1;"
+		"mov $1, %1;"
+		"L1:"
+		: "+m"(c, is_whitespace)
+		:
+		:
+	);
+
+	if (is_whitespace) {
+		puts("Whitespace");
+	} else {
+		puts("Not a whitespace");
+	}
+
+	return 0;
+}
